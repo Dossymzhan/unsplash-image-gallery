@@ -13,7 +13,7 @@
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.4)
-    url("../assets/img/annie-spratt-gQDhkMxuiIk-unsplash.jpg");
+    url("../assets/img/joris-visser-3E6VfqnsI7I-unsplash.jpg");
   background-blend-mode: darken;
   background-size: cover;
   display: flex;
@@ -41,7 +41,7 @@
   content: "";
   position: absolute;
   width: 50%;
-  height: 2px;
+  height: 1px;
   bottom: 0;
   left: 50%;
   background-color: #fff;
@@ -53,7 +53,7 @@
   position: absolute;
   width: 10px;
   height: 10px;
-  bottom: -4px;
+  bottom: -5px;
   left: 50%;
   background-color: #fff;
   transform: translateX(-50%);
@@ -83,11 +83,21 @@ input {
   height: 40px;
 }
 
+/* gallery */
 
+.gallery {
+  width: 100%;
+  padding: 40px;
+  columns: 3;
+  column-gap: 20px;
+}
 
-
-
-
-
-
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background: #f9f9f9;
+}
 
