@@ -120,6 +120,11 @@ input {
   align-items: center;
 }
 
+.popup.hide {
+  display: none;
+  opacity: 0;
+}
+
 .close-btn {
   position: absolute;
   top: 10px;
