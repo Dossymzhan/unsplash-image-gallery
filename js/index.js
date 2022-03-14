@@ -9,15 +9,15 @@ const gallery = document.querySelector(".gallery");
 let allImages;
 let currentImg = 0;
 
+// fetch images
 const getImages = async function () {
   const res = await fetch(randomPhotoUrl);
   const data = await res.json();
   allImages = data;
-
   makeImages(allImages);
 };
-getImages();
 
+// add images on UI
 const makeImages = (data) => {
   data.forEach((item, index) => {
     let img = document.createElement("img");
@@ -34,6 +34,7 @@ const makeImages = (data) => {
   });
 };
 
+// add popup
 const showPopup = (item) => {
   let popup = document.querySelector(".popup");
   const downloadBtn = document.querySelector(".download-btn");
@@ -43,4 +44,30 @@ const showPopup = (item) => {
   popup.classList.remove("hide");
   downloadBtn.href = item.links.html;
   image.src = item.urls.regular;
+
+  // close btn
+  closeBtn.addEventListener("click", () => {
+    popup.classList.add("hide");
+  });
 };
+
+getImages();
+
+// controls
+
+const preBtn = document.querySelector(".pre-btn");
+const nxtbtn = document.querySelector(".nxt-btn");
+
+preBtn.addEventListener("click", () => {
+  if (currentImg > 0) {
+    currentImg--;
+    showPopup(allImages[currentImg]);
+  }
+});
+
+nxtbtn.addEventListener("click", () => {
+  if (currentImg < allImages.length - 1) {
+    currentImg++;
+    showPopup(allImages[currentImg]);
+  }
+});
