@@ -1,0 +1,25 @@
+.search-bar {
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  background-color: #192f2e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  margin: 0;
+  width: 500px;
+  padding: 20px auto;
+}
+
+input {
+  width: 450px;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+i {
+  padding-left: 10px;
+}

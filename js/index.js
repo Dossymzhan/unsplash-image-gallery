@@ -1,8 +1,11 @@
 "use strict";
 
+let searchParam = location.search.split("=").pop();
+
 const accessKey = "m94e_SKFZ0ug15ekNNXXznLH3IDU9QvV4KaSMAMVSxM";
 
 const randomPhotoUrl = `https://api.unsplash.com/photos/random?client_id=${accessKey}&count=30`;
+const searchPhotoUrl = `https://api.unsplash.com/search/photos?client_id=${accessKey}&query=${searchParam}&per_page=50`;
 
 const gallery = document.querySelector(".gallery");
 
@@ -14,6 +17,13 @@ const getImages = async function () {
   const res = await fetch(randomPhotoUrl);
   const data = await res.json();
   allImages = data;
+  makeImages(allImages);
+};
+
+const searchImages = async function () {
+  const res = await fetch(searchPhotoUrl);
+  const data = await res.json();
+  allImages = data.results;
   makeImages(allImages);
 };
 
@@ -51,7 +61,11 @@ const showPopup = (item) => {
   });
 };
 
-getImages();
+if (searchParam === "") {
+  getImages();
+} else {
+  searchImages();
+}
 
 // controls
 

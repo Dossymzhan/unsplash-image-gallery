@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+    <title>Photo Gallery</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Header -->
+      <div class="search-bar">
+        <div class="box">
+          <i class="uil uil-search"></i>
+          <form action="search.html">
+            <input type="text" name="search-bar" placeholder="search" />
+          </form>
+        </div>
+      </div>
+      <!-- popup window -->
+      <div class="popup hide">
+        <a href="#" class="download-btn">download</a>
+        <button class="close-btn">
+          <img src="./assets/img/cancel.png" width="20px" alt="close" />
+        </button>
+        <img src="" alt="" class="large-img" />
+        <button class="controls pre-btn">
+          <img
+            src="./assets/img/previous.png"
+            width="30px"
+            height="30px"
+            alt="previous"
+          />
+        </button>
+        <button class="controls nxt-btn">
+          <img
+            src="./assets/img/next.png"
+            width="30px"
+            height="30px"
+            alt="next"
+          />
+        </button>
+      </div>
+
+      <!-- gallery -->
+      <section class="gallery"></section>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
