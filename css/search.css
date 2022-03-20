@@ -31,3 +31,31 @@ i {
     brightness(108%) contrast(108%);
   margin-left: 40px;
 }
+
+@media (max-width: 670px) {
+  .box {
+    width: 300px;
+    margin-right: 10px;
+  }
+
+  input {
+    width: 250px;
+  }
+
+  .home {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .box {
+    width: 230px;
+    margin-right: 20px;
+  }
+
+  input {
+    width: 200px;
+  }
+}
