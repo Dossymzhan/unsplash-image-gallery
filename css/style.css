@@ -190,5 +190,6 @@ input {
 .rs-logo {
   width: 100px;
   height: 60px;
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(250deg) brightness(108%) contrast(108%);
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(250deg)
+    brightness(108%) contrast(108%);
 }
