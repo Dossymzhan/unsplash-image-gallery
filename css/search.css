@@ -4,14 +4,14 @@
   margin: 0;
   background-color: #192f2e;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .box {
   margin: 0;
   width: 500px;
-  padding: 20px auto;
+  margin-right: 40px;
 }
 
 input {
@@ -22,4 +22,12 @@ input {
 
 i {
   padding-left: 10px;
+}
+
+.home {
+  width: 35px;
+  height: 35px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(250deg)
+    brightness(108%) contrast(108%);
+  margin-left: 40px;
 }
