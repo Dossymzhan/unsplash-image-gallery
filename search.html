@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/search.css" />
     <link
+      rel="shortcut icon"
+      href="./assets/img/picture.png"
+      type="image/x-icon"
+    />
+    <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
@@ -20,11 +25,19 @@
     <div class="wrapper">
       <!-- Header -->
       <div class="search-bar">
-        <a href="index.html"><img src="./assets/img/home.png" alt="home" class="home"></a>
+        <a href="index.html"
+          ><img src="./assets/img/home.png" alt="home" class="home"
+        /></a>
         <div class="box">
           <i class="uil uil-search"></i>
-          <form action="search.html">
-            <input type="text" name="search-bar" placeholder="search" />
+          <form action="search.html" autocomplete="off">
+            <input
+              class="search-text"
+              type="search"
+              name="search-bar"
+              placeholder="search"
+              autofocus="autofocus"
+            />
           </form>
         </div>
       </div>
@@ -55,16 +68,19 @@
 
       <!-- gallery -->
       <section class="gallery"></section>
-    </div>
 
-    <!-- footer -->
-    <footer class="footer">
-      <p class="year">2022</p>
-      <a href="https://github.com/Dossymzhan" class="github">dossymzhan</a>
-      <a href="https://rs.school/js-stage0/"
-        ><img src="./assets/img/rs_school_js.svg" alt="rs-logo" class="rs-logo"
-      /></a>
-    </footer>
+      <!-- footer -->
+      <footer class="footer">
+        <p class="year">2022</p>
+        <a href="https://github.com/Dossymzhan" class="github">dossymzhan</a>
+        <a href="https://rs.school/js-stage0/"
+          ><img
+            src="./assets/img/rs_school_js.svg"
+            alt="rs-logo"
+            class="rs-logo"
+        /></a>
+      </footer>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>
